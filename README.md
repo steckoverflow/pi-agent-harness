@@ -1,5 +1,7 @@
 # Engineering Agent Harness
 
+[Architecture: network, Paseo workspaces, providers, and Jira workflow](ARCHITECTURE.md)
+
 This repository is a **Pi coding-agent configuration**, not a standalone application. Point Pi at `agent/` to load the shared instructions, skills, reviewer profiles, subagent tool, and default settings while working in another repository.
 
 ## What it provides
