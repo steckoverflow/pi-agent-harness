@@ -400,7 +400,8 @@ async function runSingleAgent(
 
 			proc.on("close", (code) => {
 				if (buffer.trim()) processLine(buffer);
-				resolve(code ?? 0);
+				// null = killed by a signal; never count that as success.
+				resolve(code ?? 1);
 			});
 
 			proc.on("error", () => {
