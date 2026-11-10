@@ -23,6 +23,8 @@ Capture the diff command once: `git diff <fixed-point>...HEAD` (three-dot, so th
 
 Before going further, confirm the fixed point resolves (`git rev-parse <fixed-point>`) and the diff is non-empty. A bad ref or empty diff should fail here, not inside two parallel sub-agents.
 
+If the diff is over ~1500 lines (`git diff --stat`), split it into file groups of related changes and run both sub-agents once per group. Exclude lockfiles and generated files, and list them as excluded in the report.
+
 ### 2. Identify the spec source
 
 Look for the originating spec, in this order:
