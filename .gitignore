@@ -1,0 +1,23 @@
+# Pi credentials and machine-local state
+/agent/auth.json
+/agent/mcp.json
+/agent/models.json
+/agent/models-store.json
+/agent/trust.json
+/agent/sessions/
+
+# Secret files anywhere in this directory tree
+.env
+.env.*
+!.env.example
+**/auth.json
+**/credentials.json
+**/secrets.json
+**/service-account*.json
+**/*.pem
+**/*.key
+**/*.p12
+**/*.pfx
+**/id_rsa
+**/id_ed25519
+**/id_ecdsa

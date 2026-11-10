@@ -1,0 +1,9 @@
+{
+  "lastChangelogVersion": "1.5.0",
+  "packages": ["git:github.com/DietrichGebert/ponytail"],
+  "defaultProvider": "github-copilot",
+  "hideThinkingBlock": true,
+  "modelThinkingLevels": {
+    "github-copilot/gpt-6-luna": "high"
+  }
+}
