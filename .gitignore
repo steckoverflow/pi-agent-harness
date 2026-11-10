@@ -11,6 +11,7 @@
 .env.*
 !.env.example
 **/auth.json
+**/mcp-auth.json
 **/credentials.json
 **/secrets.json
 **/service-account*.json
